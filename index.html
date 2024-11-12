@@ -58,7 +58,6 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-        <!-- <h2 class="title is-5">MVGD's iterative pointcloud reconstruction results</h2> -->
         <h2 class="title is-5"><b>Novel view and depth synthesis results using incremental conditioning.</h2>
         </b> Red cameras indicate initial conditioning views, used to generate predictions for green cameras. After each generation, the predicted image <br> is added to the set of conditioning views for future generations.
         </div>
@@ -72,12 +71,12 @@
           </div>
           <div class="item item-steve">
             <video poster="" id="steve" autoplay controls muted loop height="100%">
-              <source src="videos/video_0.mp4" type="video/mp4">
+              <source src="./videos/video_0.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-steve">
             <video poster="" id="steve" autoplay controls muted loop height="100%">
-              <source src="https://www.cs.cornell.edu/projects/arf/videos/horns_139.mp4" type="video/mp4">
+              <source src="./videos/video_1.mp4" type="video/mp4">
             </video>
           </div>
           <div class="item item-steve">
@@ -90,6 +89,81 @@
               <source src="videos/video_3.mp4" type="video/mp4">
             </video>
           </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_4.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_5.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="./videos/video_6.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_7.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_8.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_9.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_10.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_11.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_12.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="./videos/video_13.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_14.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_15.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop height="100%">
+              <source src="videos/video_16.mp4" type="video/mp4">
+            </video>
+          </div>
+
         </div>
       </div>
     </div>
@@ -109,18 +183,19 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-        <h2 class="title is-4">Novel view and depth synthesis</h2>
+          <h2 class="title is-5"><b>Zero-Shot novel view and depth synthesis results.</h2>
+          </b> Top left images are conditioning views (colored cameras), and bottom images are the target view (black camera), showing 
+          from left-to-right: <br> ground-truth image, predicted image, and predicted depth map. These predictions are used to produce a colored 3D
+          pointcloud observed from the target viewpoint.
+
         </div>
         </div>
       <div class="container">
-        <div id="white-carousel" class="carousel1 white-carousel">
-          <div class="item item-steve">
-            <img src="./static/images/qualitative_results.png" alt="GIF1" height="100%">
-          </div>
-          <div class="item item-steve">
-            <img src="./static/images/qualitative_results.png" alt="GIF1" height="100%">
-          </div>
+
+        <div>
+          <img src="./static/images/qualitative_results.png" alt="Qualitative Results" style="width: 95%; height: auto; display: block; margin: 0 auto;">
         </div>
+
       </div>
     </div>
   </section>
@@ -132,17 +207,16 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
         <h2 class="title is-4">Accumulated Pointcloud results</h2>
+      </b> We obtained these accumulated pointclouds by generating novel images and depth maps from various <br> viewpoints (black
+      cameras), using the same conditioning views (colored cameras), and stacking them together without any post-processing.
         </div>
         </div>
+
       <div class="container">
-        <div id="white-carousel" class="carousel1 white-carousel">
-          <div class="item item-steve">
-            <img src="./static/images/acc_pcd_1.png" alt="Pointcloud 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-          </div>
-          <div class="item item-steve">
-            <img src="./static/images/acc_pcd_2.png" alt="Pointcloud 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-          </div>
+        <div>
+          <img src="./static/images/acc_pcd_1.png" alt="Pointcloud 1" style="width: 80%; height: auto; display: block; margin: 0 auto;">
         </div>
+
       </div>
     </div>
   </section>
@@ -152,17 +226,17 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
         <h2 class="title is-4">Results on outdoor scenes</h2>
+      </b> Accumulated MVGD pointclouds on dynamic datasets.</b> Red cameras are used as conditioning views, and novel
+      images and depth maps are generated from green cameras. <br> Colored pointclouds are calculated from these predictions and stacked
+      together without any post-processing.
         </div>
-        </div>
+      </div>
       <div class="container">
-        <div id="white-carousel" class="carousel1 white-carousel">
-          <div class="item item-steve">
-            <img src="./static/images/outdoors.png" alt="Pointcloud 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-          </div>
-          <div class="item item-steve">
-            <img src="./static/images/outdoors.png" alt="Pointcloud 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-          </div>
+
+        <div>
+          <img src="./static/images/outdoors.png" alt="Pointcloud2" style="width: 80%; height: auto; display: block; margin: 0 auto;">
         </div>
+
       </div>
     </div>
   </section>
