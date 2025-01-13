@@ -29,6 +29,12 @@ body {
   padding-bottom: 3rem;
 }
 
+.carousel .hero-body {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+
 .teaser {
   font-family: 'Google Sans', sans-serif;
 }
@@ -77,7 +83,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+   color: hsl(234.6, 65.8%, 39.8%) !important;
 }
 
 .publication-authors a:hover {
@@ -93,6 +99,11 @@ body {
 
 .publication-authors {
   /*color: #4286f4;*/
+}
+
+.publication-logo {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .publication-video {
