@@ -140,6 +140,32 @@ body {
   font-size: 0;
 }
 
+.white-carousel {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  flex-wrap: nowrap; /* Prevents items from wrapping */
+  overflow: hidden; /* Hides any overflowing content */
+  width: 100%; /* Ensures carousel spans the full width */
+  margin: 0 auto; /* Centers the carousel container */
+}
+
+.white-carousel .item {
+  display: flex; /* Flexbox for internal alignment */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  flex: 0 0 auto; /* Prevents shrinking or growing */
+  margin: 0 auto; /* Center the items */
+  overflow: hidden; /* Hides content outside bounds */
+  border: 0px solid #ffffff;
+  border-radius: 0; /* Removes border radius */
+  padding: 0; /* Removes padding */
+  font-size: 0; /* Ensures no additional font spacing */
+  max-width: 100%; /* Ensures responsiveness */
+  box-sizing: border-box; /* Includes padding and border in dimensions */
+}
+
 .results-carousel video {
   margin: 0;
 }
